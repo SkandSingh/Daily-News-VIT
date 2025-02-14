@@ -1,34 +1,40 @@
 :root {
-    --primaryBackgroundColor: #0A0E21;
-    --primaryForegroundColor: #1D1E33;
-    --secondaryForegroundColor: #111328;
-    --primaryTextColor: Colors.white;
-    --secondaryTextColor: #8D8E98;
-    --buttonColor: #EB1555;
+    --primaryBackgroundColor: 
+        radial-gradient(circle at 70% 40%, rgba(254, 255, 255, 0.441) 20%, transparent 50%), 
+        radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.15) 15%, transparent 40%), 
+        #2b2b2b; /* Fallback solid color */
 
+    --secondaryBackgroundColor: linear-gradient(135deg, #2b2b2b 10%, #3a3a3a 50%, #545454 90%);
+    
+    --primaryForegroundColor: #568ea4;
+    --primaryTextColor: white;
+    --secondaryTextColor: white;
+    --buttonColor: #EB1555;
 }
+
 
 html {
     scroll-behavior: smooth;
 }
 
+
+
 body {
     font-family: 'PT Sans', sans-serif;
     color: white;
     font-size: larger;
+    background-color: var(--primaryBackgroundColor);
 }
 
 #main {
-    background-color: var(--primaryBackgroundColor);
+    background: var(--primaryBackgroundColor);
     height: min-content;
     text-align: center;
     padding: 0% 5%;
-
 }
 
 .mainhead {
     font-weight: 600;
-
 }
 
 .caption {
@@ -44,7 +50,7 @@ body {
 }
 
 .navbar-dark {
-    background: var(--primaryBackgroundColor);
+    background: var(--secondaryBackgroundColor); /* Ensuring consistency */
 }
 
 .nav-link {
@@ -54,11 +60,13 @@ body {
 }
 
 .bg_div {
-    background-color: var(--primaryForegroundColor);
+    background-color: rgba(86, 142, 164, 0.8); /* Slight transparency */
     padding: 5%;
     border-radius: 15px;
     width: fit-content;
     text-align: start;
+    backdrop-filter: blur(8px); /* Soft blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
 }
 
 button {
@@ -68,7 +76,6 @@ button {
     color: white;
     border-radius: 10px;
 }
-
 
 #main .row {
     padding: 0;
@@ -81,7 +88,7 @@ button {
 }
 
 #about {
-    background-color: var(--secondaryForegroundColor);
+    background: var(--secondaryBackgroundColor);
     height: fit-content;
     padding: 14% 6% 2%;
     text-align: center;
@@ -94,14 +101,14 @@ button {
 }
 
 #download {
-    background-color: var(--secondaryForegroundColor);
+    background: var(--primaryBackgroundColor);
     height: fit-content;
     padding: 6% 5% 2%;
     text-align: center;
 }
 
 footer {
-    background-color: var(--primaryBackgroundColor);
+    background: var(--secondaryBackgroundColor); /* Consistent with navbar */
     padding: 1% 5% 1% 5%;
     text-align: center;
 }
@@ -118,16 +125,14 @@ footer a:hover {
     color: white;
 }
 
-.colfoot-2{
+.colfoot-2 {
     text-align: right;
-
     padding-left: 5%;
     padding-right: 2%;
 }
 
 /* Privacy-Page */
-
 .privacy-page-body {
-    background-color: var(--secondaryForegroundColor);
+    background: var(--secondaryBackgroundColor);
     height: 90vh;
 }
