@@ -1,15 +1,21 @@
 :root {
     --primaryBackgroundColor: 
-        radial-gradient(circle at 70% 40%, rgba(254, 255, 255, 0.441) 20%, transparent 50%), 
-        radial-gradient(circle at 30% 40%, rgba(255, 255, 255, 0.15) 15%, transparent 40%), 
-        #2b2b2b; /* Fallback solid color */
+        radial-gradient(circle at 80% 40%, rgba(148, 181, 209, 0.441) 20%, transparent 40%), 
+        radial-gradient(circle at 60% 10%, rgba(255, 255, 255, 0.15) 15%, transparent 30%), 
+        rgb(18, 23, 28); /* Fallback solid color */
 
-    --secondaryBackgroundColor: linear-gradient(135deg, #2b2b2b 10%, #3a3a3a 50%, #545454 90%);
+        --primaryBackgroundColor2: 
+        radial-gradient(circle at 80% 60%, rgba(146, 173, 195, 0.441) 10%, transparent 40%), 
+        radial-gradient(circle at 60% 8%, rgba(255, 255, 255, 0.15) 5%, transparent 30%), 
+        rgb(18, 23, 28); /* Fallback solid color */
+
+    --secondaryBackgroundColor: linear-gradient(135deg, rgb(13, 16, 20) 10%, rgb(22, 27, 33) 50%, #313538 90%);
+    --secondaryBackgroundColor2: linear-gradient(135deg, rgb(14, 18, 22)10%, rgb(17, 22, 27) 50%, rgb(19, 27, 36) 90%);
     
     --primaryForegroundColor: #568ea4;
     --primaryTextColor: white;
     --secondaryTextColor: white;
-    --buttonColor: #EB1555;
+    --buttonColor: #adb13f;
 }
 
 
@@ -50,7 +56,7 @@ body {
 }
 
 .navbar-dark {
-    background: var(--secondaryBackgroundColor); /* Ensuring consistency */
+    background: var(--secondaryBackgroundColor2); /* Ensuring consistency */
 }
 
 .nav-link {
@@ -60,13 +66,13 @@ body {
 }
 
 .bg_div {
-    background-color: rgba(86, 142, 164, 0.8); /* Slight transparency */
+    background-color: rgba(41, 49, 54, 0.911); /* Slight transparency */
     padding: 5%;
     border-radius: 15px;
     width: fit-content;
     text-align: start;
     backdrop-filter: blur(8px); /* Soft blur effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for contrast */
+    box-shadow: 0 6px 10px rgba(35, 140, 181, 0.935); /* Shadow for contrast */
 }
 
 button {
@@ -90,7 +96,7 @@ button {
 #about {
     background: var(--secondaryBackgroundColor);
     height: fit-content;
-    padding: 14% 6% 2%;
+    padding: 14% 6% 8%;
     text-align: center;
 }
 
@@ -101,14 +107,14 @@ button {
 }
 
 #download {
-    background: var(--primaryBackgroundColor);
+    background: var(--primaryBackgroundColor2);
     height: fit-content;
     padding: 6% 5% 2%;
     text-align: center;
 }
 
 footer {
-    background: var(--secondaryBackgroundColor); /* Consistent with navbar */
+    background: var(--secondaryBackgroundColor2); /* Consistent with navbar */
     padding: 1% 5% 1% 5%;
     text-align: center;
 }
@@ -122,7 +128,7 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .colfoot-2 {
