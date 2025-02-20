@@ -43,6 +43,11 @@ body {
     font-weight: 600;
 }
 
+.mainpage{
+    padding-bottom: 40%;
+    margin-bottom: 40%;
+}
+
 .caption {
     padding-top: 10px;
     font: 400;
@@ -94,7 +99,7 @@ button {
 }
 
 #main .row {
-    padding: 20px;
+    padding: 5% 5% 10%;
     margin: 0%;
     height: 100%;
 }
